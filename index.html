@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multiversity - Exam Screen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <section class="header-info">
+      <div>
+        <img class="video-call-image" src="../Image/image-women.jpg" alt="">
+      </div>
+      <div>
+        <div class="title">
+          <h2 id="counter" class="title-text">Tempo restante 2 Minuti - 59 Secondi</h2>
+          <h2>
+            Domande totali <strong>30</strong> / Domande risposte
+            <strong>0</strong>
+          </h2>
+        </div>
+        <div>
+          <p>
+            Se <strong>NON</strong> visualizza correttamente la sua immagine
+            nel riquadro a sinistra l'esame verrà invalidato. La invitiamo a
+            contattarci a <strong>supporto@unipegaso.it</strong>
+          </p>
+          <button class="primary-btn">Chiudi LockdownBrowser</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <section class="next-container">
+
+    <div class="exam-instructions">
+      <button id="openModalBtn" class="view-questions-btn">Clicca qui per visualizzare le domande</button>
+      <div class="warning">
+        <h4>L’intera durata del video, fino alla conclusione della procedura d’esame,
+          sarà oggetto di verifica da parte della commissione che dovrà accertare il rispetto
+          delle linee guida e del regolamento.</h4>
+      </div>
+    </div>
+    <div>
+    </div>
+  </section>
+
+  <div id="modal" class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h4 class="modal-title">Registrazione video dell'ambiente</h4>
+    
+        <p class="modal-description">
+         Gentile Studente, Per proseguire con lo svolgimento della prova, ti invitiamo a completare la procedura guidata di registrazione video dell'ambiente.
+        </p>
+        <ul class="list-optins">
+          <li>1. Avvia la fotocamera del tuo dispositivo mobile o un'app per scannerizzare codici QR.</li>
+          <li>2. Inquadra con il tuo dispositivo il codice QR riportato qui sotto.</li>
+          <li>3. Segui il link che apparirà per avviare la registrazione.</li>
+        </ul>
+      </div>
+
+      
+      <div class="modal-image">
+        <img src="../Image/ExampleCode.png" alt="Modal Image" />
+      </div>
+      <div class="modal-actions">
+        <button id="closeModalBtn" class="btn-cancel">Conferma il termine della procedura</button>
+       
+      </div>
+    </div>
+  </div>
+  <script src="counter.js"></script>
+</body>
+
+</html>
